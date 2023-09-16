@@ -1,0 +1,240 @@
+/* CSS for the canvas element */
+canvas {
+  margin: 0 8px 0 8px;
+}
+
+/* CSS for the body element */
+body {
+  font-size: 18px;
+  /* Font size for the entire page */
+  line-height: 1.6;
+  /* Line height for text */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+}
+
+/* CSS for the header element */
+header {
+  background-color: #333;
+  /* Background color of the header */
+  color: white;
+  /* Text color of the header */
+  padding: 20px;
+  /* Spacing inside the header */
+  text-align: center;
+  /* Center-align text within the header */
+}
+
+/* CSS for the container class */
+.container {
+  max-width: 1200px;
+  /* Maximum width for the content container */
+  margin: 0 auto;
+  /* Center-align the container horizontally */
+  padding: 20px;
+  /* Spacing inside the container */
+}
+
+/* CSS for buttons */
+button {
+  background-color: rgb(60, 60, 60);
+  /* Background color for buttons */
+  color: #8888ff;
+  /* Text color for buttons */
+  border-style: solid;
+  /* Border style for buttons */
+  border-width: 5px;
+  /* Border width for buttons */
+  border-color: rgb(60, 60, 60);
+  /* Border color for buttons */
+  font-family: 'Merriweather', serif;
+  /* Font family for buttons */
+  font-family: 'Oswald', sans-serif;
+  /* Font family for buttons */
+}
+
+/* CSS for the modal */
+/* The Modal */
+.modal {
+  display: none;
+  /* Hide the modal by default */
+  position: fixed;
+  /* Fixed position to cover the entire viewport */
+  z-index: 1;
+  /* Set the z-index for stacking order */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scrolling if modal content exceeds viewport height */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent black background */
+}
+
+/* CSS for modal content */
+/* Modal Content */
+.modal-content {
+  font-size: 24px;
+  /* Font size for modal content */
+  font-family: 'Merriweather', serif;
+  /* Font family for modal content */
+  font-family: 'Oswald', sans-serif;
+  /* Font family for modal content */
+  background-color: #fefefe;
+  /* Background color for modal content */
+  margin: 15% auto;
+  /* Center-align the modal vertically */
+  padding: 20px;
+  /* Spacing inside the modal content */
+  border: 1px solid #888;
+  /* Border for modal content */
+  width: 50%;
+  /* Width of the modal content */
+  text-align: center;
+  /* Center-align text within the modal content */
+}
+
+/* CSS for the "Try Again" button */
+#tryAgainBtn {
+  padding: 10px 20px;
+  /* Spacing inside the button */
+  font-family: 'Merriweather', serif;
+  /* Font family for the button */
+  font-family: 'Oswald', sans-serif;
+  /* Font family for the button */
+  background-color: #10baca;
+  /* Background color for the button */
+  border: none;
+  /* Remove button border */
+  color: Black;
+  /* Text color for the button */
+  font-size: 20px;
+  /* Font size for the button text */
+  cursor: pointer;
+  /* Use a pointer cursor on hover */
+}
+
+/* CSS for the "Try Again" button on hover */
+#tryAgainBtn:hover {
+  background-color: #10baca;
+  /* Background color for the button on hover */
+}
+
+/* CSS for the modal score text */
+.modal-score {
+  font-size: 20px;
+  /* Font size for modal score text */
+  font-family: 'Merriweather', serif;
+  /* Font family for modal score text */
+  font-family: 'Oswald', sans-serif;
+  /* Font family for modal score text */
+}
+
+/* CSS for the modal time text */
+.modal-time {
+  font-size: 20px;
+  /* Font size for modal time text */
+  font-family: 'Merriweather', serif;
+  /* Font family for modal time text */
+  font-family: 'Oswald', sans-serif;
+  /* Font family for modal time text */
+}
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    /* Adjust font size for tablets */
+  }
+
+  header {
+    padding: 15px;
+    /* Adjust header padding for tablets */
+  }
+
+  /* Adjust game canvas size for tablets */
+  .game-canvas {
+    width: 90%;
+    /* Set game canvas width */
+    max-width: 600px;
+    /* Maximum game canvas width */
+    margin: 0 auto;
+    /* Center-align game canvas horizontally */
+  }
+
+  /* Center paddle within the game zone for tablets */
+  .paddle {
+    width: 70px;
+    /* Adjust paddle size for tablets */
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Center "Press to Start" text within the game zone for tablets */
+  .start-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Update ball size for tablets */
+  .ball {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Media query for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    /* Adjust font size for mobile devices */
+  }
+
+  header {
+    padding: 10px;
+    /* Adjust header padding for mobile devices */
+  }
+
+  /* Adjust game canvas size for mobile devices */
+  .game-canvas {
+    width: 90%;
+    /* Set game canvas width */
+    max-width: 400px;
+    /* Maximum game canvas width */
+    margin: 0 auto;
+    /* Center-align game canvas horizontally */
+  }
+
+  /* Center paddle within the game zone for mobile devices */
+  .paddle {
+    width: 50px;
+    /* Adjust paddle size for mobile devices */
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Center "Press to Start" text within the game zone for mobile devices */
+  .start-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Update ball size for mobile devices */
+  .ball {
+    width: 10px;
+    height: 10px;
+  }
+}

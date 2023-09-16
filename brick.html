@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Brick Breaker</title>
+    <!-- External stylesheet links -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Links for fonts and styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+    <!-- Canvas element for the game -->
+    <canvas id="gameCanvas" tabindex="1"></canvas>
+    <!-- Button to enable fullscreen mode -->
+    <button class="btn btn-outline-success"  onclick="  
+    if(element.requestFullscreen)
+    {
+        element.requestFullscreen();
+      }
+       else if (element.webkitRequestFullscreen)
+       {
+        element.webkitRequestFullscreen();
+        }" >
+        Fullscreen
+    </button>
+    <!-- Button to activate Score Mode -->
+    <button class="btn btn-outline-success" onclick="ScoreAttack()">Score Mode</button>
+    <!-- Button to activate Random Mode -->
+    <button class="btn btn-outline-success" onclick="randomBoard()">Random Mode</button>
+    <!-- Modal for displaying game results -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <!-- Display the game score -->
+          <p id="modalScore"></p>
+          <!-- Display the game time -->
+          <p id="modalTime"></p>
+          <!-- Button to try the game again -->
+          <button id="tryAgainBtn">Try Again</button>
+        </div>
+      </div>
+</center>
+    <!-- JavaScript file for game functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brick Breaker</title>
+
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+    
+    <!-- Load Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- Load Custom Styles -->
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body >
+    <!-- Main Content Centered -->
+    <div class="center">
+        <h1>BRICK BREAKER</h1>
+        <a href="brick.html" class="button-anon-pen">
+            <span>Start Game</span>
+        </a>
+        <a href="#" id="show-rules" class="button-anon-pen">
+            <span>Instructions</span>
+        </a>
+        <div class="created">
+            Created with ❤️ by <span>Yashwanth</span> | <span>Suresh</span> | <span>Kausthubh</span> 
+        </div>
+    </div>
+  
+    <!-- Rules Popup Container -->
+    <div id="rules-popup" class="popup">
+        <div class="popup-content">
+            <h2>Game Info</h2>
+            <div class="scrollable-content">
+                <ol>
+                    <!-- List of Game Instructions -->
+                    <li>Normal Mode and Random Mode: You have 3 chances.</li>
+                    <br>
+                    <li>Score Mode: You have 1 chance.</li>
+                    <br>
+                    <li>The score will be displayed only in Score Mode.</li>
+                    <br>
+                    <li>You can combine Score Mode with Normal or Random Mode for added challenge.</li>
+                    <br>
+                    <li>Left-click your mouse to start the game.</li>
+                    <br>
+                    <li>Move your mouse to control the paddle's position.</li>
+                    <br>
+                    <li>Break as many bricks as possible to achieve the highest score.</li>
+                    <br>
+                    <li>Be careful not to miss the ball to avoid losing chances.</li>
+                    <br>
+                    <li>Aim for combos to maximize your score.</li>
+                    <br>
+                    <li>Your skill and strategy will determine your success.</li>
+                    <br>
+                </ol>
+            </div>
+            <button id="close-rules" class="button-anon-pen">
+                <span>Close</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Include JavaScript -->
+    <script src="mainscript.js"></script>
+</body>
+</html>

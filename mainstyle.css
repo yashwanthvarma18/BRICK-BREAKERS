@@ -1,0 +1,197 @@
+html, body {
+    font-family: 'lato';
+    font-size: 16px;
+    background: #000;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex; /* Add display: flex; to make vertical centering easier */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px white;
+    /* Remove height and width properties to allow it to size based on content */
+    max-width: 80%; /* Add max-width to limit its width */
+    text-align: center; /* Center the content within the box */
+}
+
+/* Rest of your CSS remains the same */
+
+    
+
+
+.button-anon-pen {
+    width: 300px;
+    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background-position 1.6s ease-in, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-anon-pen:hover {
+    background-position: -390px; /* Adjust as needed */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+.button-anon-pen span {
+    padding: 14px 0;
+    font-size: 22px;
+    display: block;
+    margin: 3px;
+    background: #000;
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    color: #f87800;
+    font-size: 100px;
+    text-align: center;
+}
+
+.created {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: orange;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Existing CSS styles remain the same */
+
+.button-anon-pen {
+    width: 300px;
+    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background-position 1.6s ease-in, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Target only the second button for specific styling */
+.button-anon-pen:nth-child(2) {
+    margin-top: 10px; /* Add some space between buttons */
+}
+.scrollable-content {
+    max-height: 300px; /* Set a maximum height for scrollable content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 15px; /* Add a bit of right padding to prevent content from overlapping the scrollbar */
+}
+
+.scrollable-content li {
+    color: #070707; /* Green color */
+
+    font-size: 20px; /* Increased font size */
+    float: left; /* Float the side headings to the left */
+    margin-right: 10px; /* Add some right margin for spacing */
+    clear: left; /* Clear the float to prevent text wrapping */
+}
+
+/* Style for sub-points like "Normal Mode and Random Mode" */
+.scrollable-content ul li {
+    font-size: 18px; /* Increased font size for sub-points */
+    margin-left: 30px; /* Add left margin to sub-points for indentation */
+}
+.horizontal-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.scrollable-content {
+    display: inline-block; /* Display horizontally */
+    vertical-align: top; /* Align to the top */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+.popup-content {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-height: 80%; /* Set a maximum height for the popup */
+    overflow: auto; /* Enable scrolling within the popup */
+        font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+}
+#rules-popup {
+    display: none;
+}
+span
+{
+    color: teal;
+}
+/* Media query for smaller screens */
+/* Increase font size for 'h1' on smaller screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    /* Adjust 'button-anon-pen' styles for smaller screens */
+    .button-anon-pen {
+        width: 100%;
+        font-size: 18px; /* Reduce font size for the button text */
+    }
+
+    .center {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    /* Adjust 'popup-content' styles for smaller screens */
+    #rules-popup .popup-content {
+        font-size: 2rem;
+        max-height: 80%;
+    }
+
+    /* Center the entire content on one line */
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .created {
+        font-size: 26px;
+        text-align: center;
+        margin-left: 10px;
+    }
+}
